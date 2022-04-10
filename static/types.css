@@ -1,0 +1,51 @@
+.heading{
+    text-transform:uppercase ;
+    text-align: center;
+    height: 100px;
+    padding-top: 30px;
+    font-size:medium;
+    background: url("1.jfif");
+    background-repeat: no-repeat;
+    background-size: 1100px 1500px;
+}
+body{
+    background-color: #dadfd3;
+    font-family: "Lucida Sans Typewriter";
+    
+ }
+ .container{
+    padding-left: 300px;
+    
+}
+.info{
+    
+    background-color: white;
+    height: auto;
+    width: 90%;
+    padding:2%;
+    
+}
+.content{
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+}
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+    font-size: 15px;
+  }
+  .col1{
+      padding-top: 20px;
+      text-align: justify;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
