@@ -1,0 +1,19 @@
+.container{
+    padding-left: 300px;
+}
+body{
+    background-color: #dadfd3;
+    font-family: "Lucida Sans Typewriter";
+    
+ }
+ .heading{
+    text-transform:uppercase ;
+    text-align: center;
+    padding-top: 10px;
+    font-size:medium;
+    
+}
+.slideshow-container{
+    padding: 2%;
+    text-align: center;
+}

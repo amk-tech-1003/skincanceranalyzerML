@@ -1,0 +1,39 @@
+.container{
+    padding-left: 300px;
+    
+}
+body{
+    background-color: #dadfd3;
+    font-family: "Lucida Sans Typewriter";
+    
+ }
+ .heading{
+    text-transform:uppercase ;
+    text-align: center;
+    height: 100px;
+    padding-top: 30px;
+    font-size:medium;
+    background: url("1.jfif");
+    background-repeat: no-repeat;
+    background-size: 1100px 1500px;
+}
+.info{
+    
+    background-color: white;
+    height: 448px;
+    width: 90%;
+}
+
+.column{
+    width: 50%;
+    float: left;
+    text-align: justify;
+    padding: 2%;
+    font-size: small;
+}
+
+.content{
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+}

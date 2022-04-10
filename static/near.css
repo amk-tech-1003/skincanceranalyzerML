@@ -1,0 +1,61 @@
+
+body{
+    background-color: #dadfd3;
+    font-family: "Lucida Sans Typewriter";
+    
+ }
+.heading-image{
+    padding-top: 20px;
+    text-align: center;
+    text-transform:uppercase ;
+    font-size: 40px;
+    background: url("1.jfif");
+    background-repeat: no-repeat;
+    background-size: 1500px 2000px;
+    color: #2a2b2b;
+    height: 90px;
+}
+.control-label{
+    padding-top: 20px;
+    text-align: center;
+    text-transform:uppercase ;
+    font-size: 30px;
+   
+    color: #2a2b2b;
+}
+
+button {
+    background-color: #2a2b2b ;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  .form-check{
+      padding-left: 20px;
+  }
+  hr.new1 {
+    border-top: 2px solid #2a2b2b ;
+  }
+  .out{
+      padding-left: 12px;
+      padding-right: 12px;
+      
+  }
+  .output-data{
+    border: 2px outset rgb(17, 16, 16);
+   background-color: white;
+    text-align: left;
+    font-size: 16px;
+    height: 70px;
+    width:90rem;
+    box-shadow: 5px 5px #888888;
+  }
+  .datas{
+      padding: 12px;
+  }

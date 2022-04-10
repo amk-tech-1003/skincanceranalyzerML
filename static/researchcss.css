@@ -1,0 +1,40 @@
+body{
+    background-color: #dadfd3;
+    font-family: "Lucida Sans Typewriter";
+    
+ }
+ .container{
+   padding-left:300px;
+   }
+   .heading{
+    text-align: center;
+    padding-top: 10px;
+    font-size:medium;
+    text-transform:uppercase ;
+
+}
+.services-blog{
+    padding-top: 2%;
+}
+.column{
+    width: 50%;
+    float: left;
+    text-align: center;
+    
+}
+.row{
+    padding-left: 5%;
+    padding-right: 2%;
+    padding-bottom: 30%;
+}
+
+.cards {
+    background-color: white;
+box-shadow: 0 4px 8px 0 rgba(12, 12, 12, 0.2);
+border-radius: 30px;
+transition: 0.3s;
+
+height: 500px;
+width: 90%;
+padding: 2%;
+}

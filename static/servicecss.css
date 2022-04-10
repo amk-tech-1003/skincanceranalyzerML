@@ -1,0 +1,52 @@
+body{
+    background-color: #dadfd3;
+    font-family: "Lucida Sans Typewriter";
+    
+ }
+ .container{
+   padding-left:300px;
+   }
+.heading{
+    text-align: center;
+    padding-top: 10px;
+    font-size:medium;
+}
+.content{
+    padding: 2%;
+    font-size: 18px;
+    text-align: center;
+    
+}
+.services-blog{
+    padding-top: 2%;
+}
+.column{
+    width: 33%;
+    float: left;
+    text-align: center;
+    
+}
+.row{
+    padding-left: 5%;
+    padding-right: 2%;
+    padding-bottom: 30%;
+}
+
+.cards {
+    background-color: white;
+box-shadow: 0 4px 8px 0 rgba(12, 12, 12, 0.2);
+border-radius: 30px;
+transition: 0.3s;
+
+height: 380px;
+width: 90%;
+padding: 1%;
+}
+.icons{
+    padding-top: 10%;
+}
+.ser-content{
+    padding: 5%;
+    font-size: 14px;
+    text-align: justify;
+}
