@@ -1,0 +1,172 @@
+{% extends "navbars.html" %}
+{%block content %}
+<html lang="en">
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='basecss.css')}}">
+</head>
+<body>
+
+  <div class="container">
+    <div class="slideshow-container">
+    
+    <div class="mySlides fade">
+      <img class="img-slide" src="{{url_for('static',filename='2.jfif')}}" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <img class="img-slide" src="{{url_for('static',filename='1.jfif')}}" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <img class="img-slide" src="{{url_for('static',filename='3.jfif')}}" style="width:100%">
+    </div>
+    
+    <div class="text">
+    <div class = "typings">
+        <h2>What is Skin Cancer?</h2>
+    <p class="demo" id="demo"></p>
+    </div>
+    </div>
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    <br>
+    <h1>Latest News</h1>
+    <br>
+    
+
+    <div class="row">
+      <div class="column">
+          <div class="cards">
+            <br>
+            <a href="https://medicaldialogues.in/oncology/news/fda-approves-new-immunotherapy-regimen-for-patients-with-melanoma-90401">
+              <h1>FDA approves new immunotherapy regimen for patients with melanoma</h1></a>
+              <br>
+              <center>
+                  <img src="{{url_for('static',filename='news1.jfif')}}" alt="Avatar" style="width:400px; height: 200px;"></center>                    <div class="card-container">
+                <br>
+              </div>
+            </div>
+      </div>
+
+      <div class="column">
+          <div class="cards">
+            <br>
+            <a href="https://medicalxpress.com/news/2022-03-vitamin-b3-niacinamide-skin-cancer.html">
+              <h1>Vitamin B3, niacinamide and reducing skin cancer risk: What does the research say?</h1>
+            </a>
+              <br>
+              <center>
+                  <img src="{{url_for('static',filename='news2.jfif')}}" alt="Avatar" style="width:400px; height: 200px;"></center>                    <div class="card-container">
+                <br>
+              </div>
+            </div>
+      </div>
+  </div>
+<br>
+  <div class="row">
+      <div class="column">
+          <div class="cards">
+            <br>
+            <a href="https://www.prevention.com/health/a39527343/teddi-mellencamp-melanoma-skin-cancer-test-results/">
+            <h1>'Real Housewives' Star Teddi Mellencamp Reveals Melanoma ...</h1>
+            </a>  
+            <br>
+              <center>
+                  <img src="{{url_for('static',filename='news3.jfif')}}" alt="Avatar" style="width:400px; height: 200px;"></center>                    <div class="card-container">
+                <br>
+              </div>
+            </div>
+      </div>
+
+      <div class="column">
+          <div class="cards">
+            <br>
+            <a href="https://newsroom.uw.edu/news/patients-rare-skin-cancer-face-40-recurrence-rate">
+            <h1>Patients with rare skin cancer face 40% recurrence rate</h1>
+            </a>  
+            <br>
+              <center>
+                  <img src="{{url_for('static',filename='news4.jfif')}}" alt="Avatar" style="width:400px; height: 200px;"></center>                    <div class="card-container">
+                <br>
+              </div>
+            </div>
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="column">
+          <div class="cards">
+            <br>
+            <a href="https://www.6pr.com.au/breakthrough-treatment-for-non-melanoma-skin-cancer-in-australia/">
+            <h1>'Pleasant' new skin cancer treatment breakthrough</h1>
+            </a>  
+            <br>
+              <center>
+              <img src="{{url_for('static',filename='news5.jfif')}}" alt="Avatar" style="width:400px; height: 200px;"></center>
+              <div class="card-container">
+                <br>
+              </div>
+            </div>
+            </div>
+<br>
+      <div class="column">
+          <div class="cards">
+            <br>
+            <a href="https://www.news18.com/news/lifestyle/research-suggests-that-vaccines-can-prevent-skin-cancer-4875656.html">
+            <h1>Research Suggests That Vaccines Can Prevent Skin Cancer</h1>
+            </a>  
+            <br>
+              <center>
+                  <img src="{{url_for('static',filename='news6.jfif')}}" alt="Avatar" style="width:400px; height: 200px;"></center>                    <div class="card-container">
+                <br>
+              </div>
+            </div>
+      </div>
+  </div>
+
+    </div>
+    <script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+    <script>
+    var i = 0;
+    var txt = 'Skin cancer is by far the most common type of cancer. If you have skin cancer, it is important to know which type you have because it affects your treatment options and your outlook (prognosis). If you aren’t sure which type of skin cancer you have, ask your doctor so you can get the right information.';
+    var speed = 50;
+    
+    function typeWriter() {
+    if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+    }
+    }
+    typeWriter();
+    </script>
+</body>
+</html>
+{% endblock %}

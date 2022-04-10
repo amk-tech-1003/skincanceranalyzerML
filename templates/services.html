@@ -1,0 +1,67 @@
+{% extends "navbars.html" %}
+{%block content %}
+
+<html>
+    <head>
+        <title>Services</title>
+        <link rel="stylesheet" href="{{url_for('static',filename='servicecss.css')}}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="heading">
+                <h1>Our service</h1>
+            </div>
+            <div class="content">
+                <p>Diagnosing skin cancer usually begins with a visual examination, it will take long duration if its done manually and patitent make lead to critical stage of cancer, Skin Analyzer provides accurate and timely skin cancer detection using Machine Learning.</p>
+            </div>
+            <div class="services-blog">
+                <div class="row">
+                    <div class="column">
+                    
+                        <div class="cards">
+                            <div class="icons">
+                                <a href="{{url_for('pred')}}">
+                            <img src="{{url_for('static',filename='checkicon.png')}} " style="width:100px; height:100px">
+                        </a>
+                            <h1>Classify Skin cancer</h1>
+                            </div>
+                            <div class="ser-content">
+                                Skin Cancer has 7 types to start the therapy it is necessary to classify the type of cancer and Classifying it manually will take a long period of time which may lead the patient to critical stages. Skin Analyzer help to classify skin lesions and identify the cancer type using ML.
+                            </div>
+                        
+                        </div>
+                    
+                    </div>
+                    <div class="column">
+                        <div class="cards">
+                            <div class="icons">
+                                <a href="{{url_for('areas')}}">
+                            <img src="{{url_for('static',filename='locicon.png')}} " style="width:100px; height:100px">
+                                </a>
+                            <h1>Near by dermatologist</h1>
+                            </div>
+                            <div class="ser-content">
+                                Skin Analyzer helps you to search for dermatologists. You can find the doctor just by entering the city name and will you get the result of the available doctor in that city.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="cards">
+                            <div class="icons">
+                                <a href="{{url_for('home')}}">
+                                <img src="{{url_for('static',filename='newsicon.png')}} " style="width:100px; height:100px">
+                                </a>
+                                <h1>Latest news</h1>
+                            </div>
+                            <div class="ser-content">
+                                Skin Analyzer help to be aware of the latest update in research, technology, medicines, treatments, etc in curing skin cancer.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+{% endblock %}

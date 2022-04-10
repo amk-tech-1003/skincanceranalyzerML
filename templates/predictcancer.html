@@ -1,0 +1,53 @@
+{% extends "navbars.html" %}
+{%block content %}
+<html lang="en">
+<head>
+  <title>Image Classification</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='predicts.css')}}">
+</head>
+<body >
+
+<div class="container"style="padding-left: 300px;">
+  <h1 class="heading-image">Image Classfication</h1>
+  <br><br>
+  <hr class="new1">
+  <br><br>
+  <form class="form-check" action="/submit" method="post" enctype="multipart/form-data">
+
+    <div class="form-group">
+      <label class="control-label" for="pwd">Upload Your Image :</label>
+      <div class="col-sm-10">          
+        <input type="file" class="form-control" placeholder="Hours Studied"  name="my_image" id="pwd">
+      </div>
+    </div>
+
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn">Submit</button>
+      </div>
+    </div>
+  </form>
+<center>
+	{% if prediction %}
+  <div class="row">
+    <div class="column">
+  <img src="{{img_path}}" height="200px" width="200px">
+    </div>
+    <div class="column">
+    <h1 style="color:#2a2b2b"><b> Cancer Type   : </b><i> {{prediction}}</i></h1>
+    </div>
+    <div class="column">
+      <h1 style="color:#2a2b2b"><b> What to do?   : </b></h1><br>
+      <div style="text-align:left">
+        {% for n in precaution %}
+        <h2> {{n}}</h2><br>
+        {% endfor %}
+      </div>
+        </div>
+  </div>
+	{% endif %}
+</center>
+</div>
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="{{url_for('static',filename='navbarcss.css')}}">
+
+
+</head>
+<body>
+  <nav class='main-nav'>
+   <span class="nav-heads">SKIN ANALYZER</span>
+    <div class='menu-link'>
+        <ul>
+            <li>
+                <a href="{{url_for('home')}}">Home</a>
+            </li>
+            <li>
+                <a href="{{url_for('services')}}">Services</a>
+            </li>
+            
+            
+            <li>
+                <a href="{{url_for('pred')}}">Analyse</a>
+            </li>
+
+            <li>
+                <a href="{{url_for('about')}}">About Us</a>
+            </li>
+            <li>
+                <a href='contact'>Contact us</a>
+            </li>
+            
+            
+        </ul>
+    </div>
+</nav>
+<br><br><br><br><br><br><br>
+
+<div class='Sidebar' style="background-color: #2a2b2b; width: 300px; height: 100vh;">
+    <center>
+     <br><br><br>   
+    <div class='menus'>
+    <ul class='courses'>
+    
+        <li ><a href='types'>Types of Skin Cancer</a></li><br>
+    <li ><a href='research'>Research Paper</a></li><br>
+    <li ><a href='predicts'>Check Skin Cancer</a></li><br>
+   
+    
+    <li><a href="{{url_for('areas')}}">Near by Dermatologist</a></li><br>
+    <li>
+        <a href='https://www.cancercare.org/diagnosis'>Help</a>
+    </li>
+    </ul>
+</div></center>
+</div>
+
+<div class="footer">
+    <p>copyright: amreen10032000@gmail.com</p>
+  </div>
+
+{% block content %}
+{% endblock %}
+
+</body>
+</html>
+
+

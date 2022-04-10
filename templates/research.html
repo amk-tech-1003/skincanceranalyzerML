@@ -1,0 +1,31 @@
+{% extends "navbars.html" %}
+{%block content %}
+<html>
+    <head>
+        <title>Research</title>
+        <link rel="stylesheet" href="{{url_for('static',filename='researchcss.css')}}">
+    </head>
+    <body>
+        <div class="container">
+            <div class="heading">
+                <h1>Our Research Papers</h1>
+            </div>
+            <div class="services-blog">
+                <div class="row">
+                    <div class="column">
+                        <div class="cards">
+                            <embed src="{{url_for('static', filename='paper1.pdf')}}" width="400px" height="460px">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="cards">
+                        <embed src="{{url_for('static', filename='paper2.pdf')}}" width="400px" height="460px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </body>
+</html>
+{% endblock %}

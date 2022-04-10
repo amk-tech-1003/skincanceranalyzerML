@@ -1,0 +1,18 @@
+<div class = "typings">
+    <h1>Skin Cancer:</h1>
+<p class="demo" id="demo"></p>
+</div>
+<script>
+var i = 0;
+var txt = 'Skin cancer is by far the most common type of cancer. If you have skin cancer, it is important to know which type you have because it affects your treatment options and your outlook (prognosis). If you aren’t sure which type of skin cancer you have, ask your doctor so you can get the right information.';
+var speed = 50;
+
+function typeWriter() {
+if (i < txt.length) {
+document.getElementById("demo").innerHTML += txt.charAt(i);
+i++;
+setTimeout(typeWriter, speed);
+}
+}
+typeWriter();
+</script>

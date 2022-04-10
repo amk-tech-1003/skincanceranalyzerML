@@ -1,0 +1,70 @@
+{% extends "navbars.html" %}
+{%block content %}
+
+<html>
+    <head>
+        <title>Services</title>
+        <link rel="stylesheet" href="{{url_for('static',filename='about.css')}}">
+    </head>
+    <body >
+        <div class="container">
+          
+                <div class="heading" >
+                    <h1>Skin Analyzer</h1>
+                </div>
+                <div class="content">
+                <div class="info">
+                    <div class="row">
+                        <div class="column">
+                            Skin Cancer is an uncontrollable growth of 
+abnormal cells in the epidermis which is the outer layer 
+of the skin. It is caused when the DNA is altered and it 
+can't properly control skin cell growth. Skin cancer is also 
+one of the most hazardous forms of cancer. <br><br>
+There are 4 main types of skin cancer named as Basal 
+cell carcinoma, Basal cell carcinoma, Merkel cell cancer, 
+and Melanoma. Detection of Skin cancer in the early stage 
+will be helpful to cure it. The normal dermatologist way 
+to diagnose skin cancer is visual, with the dermoscopic 
+assessment of the lesion followed by biopsy and 
+histopathologic evaluation which is very long which leads 
+the patient to critical stages of cancer. Currently, many 
+technologies have been developed to increase the accuracy 
+of detecting skin cancer as early as possible.<br><br>
+Computer Vision can play a vital role in medical 
+Image diagnosis which has been proved by the existing 
+systems. In this article, we are analysing all the seven 
+types of skin cancers, they are Melanoma (MEL), 
+Melanomic Neves (NV), Basal Cell Carcinoma (BCC), 
+Actinic Keratosis (AKIEC), Benign Keratosis (BKL), 
+
+                        </div>
+                        <div class="column">
+                            Dermatofibroma (DF), Vascular Lesion (VASC) to get the
+better understanding of how to build the CNN 
+(Convolutional Neural Network) model which will 
+perform image processing on various image dataset of 
+skin cancer to analyze and detect its type.<br><br>
+Upon understanding Dr. Sharmila Gaikwad’s "Study on 
+Artificial Intelligence in Healthcare." and getting 
+motivated by it we understood the importance to curb this 
+global incidence of skin cancer from reaching massive 
+heights. There is an urgent need of reliable and accurate 
+systems to not only help the expert dermatologists in the 
+field but also individuals to detect skin lesion types as 
+early as possible.<br><br>
+Skin Analyzer will help 
+dermatologists for early detection of cancer in skin 
+and give them more time to perfect their future steps 
+in curing the patients, because time plays an 
+extremely important role in providing cure for this 
+deadly disease.
+                        </div>
+                    </div>
+                </div> 
+                </div>
+            
+        </div>
+    </body>
+</html>
+{% endblock %}
